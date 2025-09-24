@@ -1,0 +1,67 @@
+body{
+    user-select: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.ul{
+    display: flex;
+    gap: 20px;
+}
+
+.images{
+    max-width: 201px;
+    min-width: 200px;
+    height: 300px;
+}
+
+.overflow{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:650px){
+    .images{
+        min-width: 150px;
+        max-width: 151px;
+        height: 200px;
+    }
+}
+
+@media(max-width:500px){
+    .images{
+        min-width: 80px;
+        max-width: 81px;
+        height: 100px;
+    }
+}
+
+@media(max-width:350px){
+    .button{
+        display: none;
+    }
+}
