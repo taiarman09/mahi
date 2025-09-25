@@ -7,6 +7,12 @@ header{
     top: 0;
     z-index: 1;
 }
+.none{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
 .ul{
     display: flex;
     gap: 20px;
@@ -33,7 +39,6 @@ header{
 }
 .width-90{
     width: 90%;
-    border: 1px solid black;
 }
 .Original{
     font-size: 30px;
@@ -84,7 +89,8 @@ header{
     display: flex;
     flex-wrap: inherit;
     align-items: center;
-    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 
@@ -110,6 +116,15 @@ header{
         font-size: 20px;
     }
 }
+@media(max-width:700px){
+    .Original{
+        font-size: 20px;
+    }
+    .card{
+        min-width: 170px;
+        height: 200px;
+    }
+}
 @media(max-width:650px){
     .images{
         min-width: 150px;
@@ -130,8 +145,30 @@ header{
     .font{
         font-size: 10px;
     }
+    .card{
+        min-width:100px;
+        height: 150px;
+    }
+    .Original{
+        font-size: 15px;
+    }
+    .hover{
+        font-size: 10px;
+    }
+    .title{
+        font-size: 10px;
+    }
 }
-
+@media(min-width:273px){
+    .none{
+        display: none;
+    }
+}
+@media(max-width:273px){
+    header{
+        display: none;
+    }
+}
 @media(max-width:350px){
     /* .button{
         display: none;
@@ -142,12 +179,21 @@ header{
     .form-control{
         width: 150px;
     }
-}
-@media(max-width:303px){
-    .overflow{
-        margin-top: 100px;
+    .card{
+        min-width: 80px;
+        height: 100px;
+    }
+    .title{
+        font-size: 8px;
+    }
+    .hover{
+        font-size: 8px;
+    }
+    .Original{
+        font-size: 10px;
     }
 }
+
 @media(max-width:280px){
    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
     display: flex;
