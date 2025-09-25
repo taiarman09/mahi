@@ -73,6 +73,15 @@ header{
     text-align: center;
 }
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right:0px;
+    padding-left: 0px;
+}
+
+
 
 
 
@@ -124,5 +133,10 @@ header{
     }
     .font{
         font-size: 8px;
+    }
+}
+@media(max-width:303px){
+    .overflow{
+        margin-top: 100px;
     }
 }
