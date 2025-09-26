@@ -43,8 +43,15 @@ header{
 .font{
     font-size: 25px;
 }
-.width-90{
-    width: 90%;
+.font1{
+    font-size: 30px;
+}
+.font2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.width-98{
+    width: 98%;
 }
 .Original{
     font-size: 30px;
@@ -268,5 +275,14 @@ form.d-flex input {
 @media(min-width:365px){
     .d-flex-{
         display:none;
+    }
+}
+
+@media(max-width:450px){
+    .font1{
+        font-size: 22px;
+    }
+    .font2{
+        font-size: 12px;
     }
 }
