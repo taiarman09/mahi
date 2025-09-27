@@ -19,6 +19,85 @@
             text-overflow: ellipsis;
             /* last me ... dikhaye */
         }
+
+        .card {
+            width: 300px;
+            height: 500px;
+        }
+
+        .card1 {
+            width: 100%;
+            height: 70%;
+        }
+
+        .card-body {
+            width: 100%;
+            height: 30%;
+        }
+
+        button {
+            border: none;
+            background-color: white;
+        }
+
+        @media(max-width:600px) {
+            .card {
+                width: 200px;
+                height: 70%;
+            }
+
+            .card1 {
+                width: 100%;
+                height: 30%;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 30%;
+            }
+
+            .card-text {
+                font-size: 15px;
+            }
+
+            .font1 {
+                font-size: 15px;
+            }
+
+            .font2 {
+                font-size: 12px;
+            }
+
+            .button {
+                width: 120px;
+            }
+        }
+
+        @media(max-width:500px) {
+            .card {
+                width: 150px;
+                height: 250px;
+            }
+
+            .card1 {
+                width: 100%;
+                height: 150px;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 100px;
+            }
+            .card-text{
+                margin-top: -10px;
+            }
+            .button {
+                width: 100px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -52,35 +131,152 @@
 
 
     <!-- ✅ Sample Content -->
-    <section class="mt-5 pt-5 text-center">
+    <section class="mb-3 pt-5 text-center">
         <div class="font1">Welcome to MAHI BAZAR Store</div>
         <div class="font2">Search any product from the navbar above 👆</div>
     </section>
 
 
     <section>
-        <div class="d-flex justify-content-between gap-3 mt-3">
+        <div class="d-flex flex-wrap justify-content-around gap-2 mt-4">
 
 
 
-            <div class="card" style="width: 18rem;">
-                <img src="https://images.meesho.com/images/products/555301913/3ba3k_512.avif?width=360"
-                    class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
-                    <p class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</p>
+                    <div class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</div>
                     <div class="d-flex align-items-center gap-1">
-                        <div class="font1">₹453</div>
-                        <div class="font2">₹532</div>
-                        <div class="text-success font2">15% off</div>
+                        <div class="font1">₹670</div>
+                        <div class="font2">₹999</div>
+                        <div class="text-success font2">33% off</div>
                     </div>
-                    <a href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti"
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/1.jpg"
                         target="_blank"
-                        style="display:inline-block; padding:12px 25px; background-color:#25D366; color:white; text-decoration:none; border-radius:6px; font-weight:bold; font-family:sans-serif; font-size:16px;">
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
                         Buy Now
                     </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹670</div>
+                        <div class="font2">₹999</div>
+                        <div class="text-success font2">33% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/1.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
 
 
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹670</div>
+                        <div class="font2">₹999</div>
+                        <div class="text-success font2">33% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/1.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
 
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹670</div>
+                        <div class="font2">₹999</div>
+                        <div class="text-success font2">33% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/1.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹670</div>
+                        <div class="font2">₹999</div>
+                        <div class="text-success font2">33% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/1.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹670</div>
+                        <div class="font2">₹999</div>
+                        <div class="text-success font2">33% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/1.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Rayon Slub Women Kurti With Dupatta & Bottomwear</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹670</div>
+                        <div class="font2">₹999</div>
+                        <div class="text-success font2">33% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/1.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                    
                 </div>
             </div>
 
