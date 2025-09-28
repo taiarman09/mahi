@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAHI BAZAR STORE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <style>
+        .card {
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+       
+
+        .w-80- {
+            width: 95%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image{
+            width: 100%; 
+            height: 100%;
+        }
+
+
+
+        @media(max-width:600px){
+            .card{
+                min-width: 150px;
+                max-width: 151px;
+            }
+        }
+
+        @media(max-width:400px){
+            .card{
+                min-width: 100px;
+                max-width: 101px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand fw-bold" href="#" style="font-style: italic;">MAHI</a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Search -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <form onsubmit="return redirectToProduct(event)" class="d-flex ms-auto mt-2 mt-lg-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search any product..." aria-label="Search"
+              id="searchInput">
+            <button class="btn btn-outline-primary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ✅ Sample Content -->
+  <section class="mt-5 pt-5 text-center">
+    <div class="font1">Welcome to MAHI BAZAR Store</div>
+    <div class="font2">Search any product from the navbar above 👆</div>
+  </section>
+
+
+
+  <section>
+        <div class="section">
+            <div class="w-80-">
+
+                <div class="card">
+                    <div class="image"><a href="https://www.meesho.com/s/p/8ud8b8?utm_source=s_w"><img height="100%"
+                                width="100%" src="./image/3.jpeg" alt=""></a></div>
+                </div>
+                <div class="card">
+                    <div class="image"><a href="https://www.meesho.com/s/p/7cp5vm?utm_source=s_w"><img height="100%"
+                                width="100%" src="./image/6.jpeg" alt=""></a></div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ✅ Single JS function -->
+  <script>
+    function redirectToProduct(event) {
+      event.preventDefault();
+
+      let query = document.getElementById("searchInput").value.toLowerCase().trim();
+
+      // Product pages mapping
+      const productPages = {
+        "mobile": "mobile.html",
+        "laptop": "laptop.html",
+        "watch": "watch.html",
+        "headphone": "headphone.html",
+        "makeup": "makeup.html",
+        "shoes": "shoes.html",
+        "maherah prise": "prise.html",
+      };
+
+      if (productPages[query]) {
+        window.location.href = productPages[query];
+      } else {
+        window.location.href = "notfound.html";
+      }
+
+      return false;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

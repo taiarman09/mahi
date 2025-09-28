@@ -1,0 +1,1812 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MAHI BAZAR STORE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        .card-text {
+            width: 100%;
+            /* chhoti width */
+            white-space: nowrap;
+            /* line break na ho */
+            overflow: hidden;
+            /* overflow chhup jaye */
+            text-overflow: ellipsis;
+            /* last me ... dikhaye */
+        }
+
+        .card {
+            width: 300px;
+            height: 500px;
+        }
+
+        .card1 {
+            width: 100%;
+            height: 70%;
+        }
+
+        .card-body {
+            width: 100%;
+            height: 30%;
+        }
+
+        .button {
+            border: none;
+            background-color: white;
+            width: 150px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .font1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .font2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media(max-width:600px) {
+            .card {
+                width: 200px;
+                height: 70%;
+            }
+
+            .card1 {
+                width: 100%;
+                height: 30%;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 30%;
+            }
+
+            .card-text {
+                font-size: 15px;
+            }
+
+            .font1 {
+                font-size: 15px;
+            }
+
+            .font2 {
+                font-size: 12px;
+            }
+
+            .button {
+                width: 120px;
+            }
+        }
+
+        @media(max-width:500px) {
+            .card {
+                width: 150px;
+                height: 250px;
+            }
+
+            .card1 {
+                width: 100%;
+                height: 150px;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 100px;
+            }
+
+            .card-text {
+                margin-top: -10px;
+            }
+
+            .button {
+                width: 80px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 12px;
+            }
+
+            .font1 {
+                margin-top: 5px;
+            }
+
+            .font2 {
+                margin-top: 5px;
+            }
+
+            .button {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ✅ Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand fw-bold" href="#" style="font-style: italic;">MAHI</a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Search -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <form onsubmit="return redirectToProduct(event)" class="d-flex ms-auto mt-2 mt-lg-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search any product..."
+                            aria-label="Search" id="searchInput">
+                        <button class="btn btn-outline-primary" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ✅ Sample Content -->
+    <section class="mb-5 pt-5 text-center">
+        <div class="font1">Welcome to MAHI BAZAR Store</div>
+        <div class="font2">Search any product from the navbar above 👆</div>
+    </section>
+
+
+    <section>
+        <div class="d-flex flex-wrap justify-content-around gap-2 mt-4">
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/101.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">STI Men's Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹670</div>
+                        <div class="font2 text-decoration-line-through">₹999</div>
+                        <div class="text-success font2">33% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/101.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/102.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Retro Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹612</div>
+                        <div class="font2 text-decoration-line-through">₹756</div>
+                        <div class="text-success font2">19% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/102.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/103.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Glamorous Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹554</div>
+                        <div class="font2 text-decoration-line-through">₹865</div>
+                        <div class="text-success font2">36% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/103.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/104.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">[Product name cannot be different for the different sizes of the same product]</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹749</div>
+                        <div class="font2 text-decoration-line-through">₹862</div>
+                        <div class="text-success font2">13% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/104.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/105.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Pretty Ravishing Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹349</div>
+                        <div class="font2 text-decoration-line-through">₹499</div>
+                        <div class="text-success font2">30% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/105.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/106.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Urbane Modern Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹450</div>
+                        <div class="font2 text-decoration-line-through">₹513</div>
+                        <div class="text-success font2">12% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/106.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/107.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Gespo Men's Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹430</div>
+                        <div class="font2 text-decoration-line-through">₹525</div>
+                        <div class="text-success font2">19% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/107.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/108.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Modern Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹449</div>
+                        <div class="font2 text-decoration-line-through">₹752</div>
+                        <div class="text-success font2">40% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/108.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/109.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Comfy Elegant Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹730</div>
+                        <div class="font2 text-decoration-line-through">₹949</div>
+                        <div class="text-success font2">23% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/109.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/110.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Urbane Designer Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹399</div>
+                        <div class="font2 text-decoration-line-through">₹600</div>
+                        <div class="text-success font2">34% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/110.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/111.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fatty Mouse Men's Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹349</div>
+                        <div class="font2 text-decoration-line-through">₹526</div>
+                        <div class="text-success font2">34% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/111.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/112.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Pretty Fashionista Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹499</div>
+                        <div class="font2 text-decoration-line-through">₹726</div>
+                        <div class="text-success font2">31% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/112.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/113.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Man Polyester Tshirt Navy And Mustard Pack Of 2 Pc</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹499</div>
+                        <div class="font2 text-decoration-line-through">₹562</div>
+                        <div class="text-success font2">20% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/113.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/114.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Casual Modern Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹299</div>
+                        <div class="font2 text-decoration-line-through">₹339</div>
+                        <div class="text-success font2">12% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/114.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/115.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men's Classic Round Neck T-Shirt Pack Of 4 Pcs</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹249</div>
+                        <div class="font2 text-decoration-line-through">₹271</div>
+                        <div class="text-success font2">7% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/115.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/116.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Fabulous Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹499</div>
+                        <div class="font2 text-decoration-line-through">₹589</div>
+                        <div class="text-success font2">15% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/116.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/117.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">REALSON STYLISH TRACK PANTS</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹299</div>
+                        <div class="font2 text-decoration-line-through">₹352</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/117.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/118.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">CLOTVIN MEN SELF DESIGN POLO T SHIRT FOR MEN AND BOYS</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹499</div>
+                        <div class="font2 text-decoration-line-through">₹569</div>
+                        <div class="text-success font2">12% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/118.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/119.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Elegant Trendy Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹699</div>
+                        <div class="font2 text-decoration-line-through">₹813</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/119.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/120.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">men tshirt</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹699</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/120.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/121.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Ravishing Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹310</div>
+                        <div class="font2 text-decoration-line-through">₹349</div>
+                        <div class="text-success font2">11% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/121.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/122.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Classy Men Kurtas</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹650</div>
+                        <div class="font2 text-decoration-line-through">₹803</div>
+                        <div class="text-success font2">19% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/122.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/123.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men's Regular Fit Army Print Cargo Style Casual Trousers Pants</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹414</div>
+                        <div class="font2 text-decoration-line-through">₹449</div>
+                        <div class="text-success font2">17% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/123.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/125.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Pretty Glamorous Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹749</div>
+                        <div class="font2 text-decoration-line-through">₹842</div>
+                        <div class="text-success font2">11% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/125.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/126.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Kurtas</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹298</div>
+                        <div class="font2 text-decoration-line-through">₹332</div>
+                        <div class="text-success font2">10% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/126.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/127.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Designer Trendy Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹399</div>
+                        <div class="font2 text-decoration-line-through">₹450</div>
+                        <div class="text-success font2">11% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/127.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/128.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Graceful Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹1,249</div>
+                        <div class="font2 text-decoration-line-through">₹1,561</div>
+                        <div class="text-success font2">20% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/128.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/129.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Cotton Blend Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹399</div>
+                        <div class="font2 text-decoration-line-through">₹487</div>
+                        <div class="text-success font2">18% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/129.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/130.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Latest Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹320</div>
+                        <div class="font2 text-decoration-line-through">₹381</div>
+                        <div class="text-success font2">16% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/130.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/131.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Classic Ravishing Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/131.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/132.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">STI Men's Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹386</div>
+                        <div class="font2 text-decoration-line-through">₹460</div>
+                        <div class="text-success font2">16% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/132.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/133.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Pretty Fashionista Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹460</div>
+                        <div class="font2 text-decoration-line-through">₹480</div>
+                        <div class="text-success font2">4% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/133.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/134.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Pretty Glamorous Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹365</div>
+                        <div class="font2 text-decoration-line-through">₹430</div>
+                        <div class="text-success font2">15% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/134.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/135.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Casual Modern Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹275</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">8% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/135.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/136.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Pretty Fashionista Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹431</div>
+                        <div class="font2 text-decoration-line-through">₹490</div>
+                        <div class="text-success font2">11% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/136.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/137.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Glamorous Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹310</div>
+                        <div class="font2 text-decoration-line-through">₹349</div>
+                        <div class="text-success font2">4% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/137.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/138.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fashionable Modern Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹310</div>
+                        <div class="font2 text-decoration-line-through">₹349</div>
+                        <div class="text-success font2">11% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/138.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/140.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Cotton Blend Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹310</div>
+                        <div class="font2 text-decoration-line-through">₹349</div>
+                        <div class="text-success font2">11% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/140.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/141.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Cotton Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹310</div>
+                        <div class="font2 text-decoration-line-through">₹349</div>
+                        <div class="text-success font2">11% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/141.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/142.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Cotton Blend Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/142.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/143.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Stylish Graceful Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/143.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/144.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Poly Blend Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/144.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/145.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fancy Fashionable Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/145.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/146.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Gespo Men's Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/146.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/147.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Casual Fabulous Men Track Pants</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/147.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/148.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fancy Latest Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/148.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/149.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fancy Elegant Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/149.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/150.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Classy Graceful Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/150.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/151.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Urbane Fabulous Men Nightsuits</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/151.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+            
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/152.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Pack of 2 Fancy Fashionista Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/152.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/153.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Cotton Blend Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/153.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/154.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Polycotton Men Polycotton Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/154.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/155.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Straight Jeans</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/155.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/156.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Elegant Men Kurtas</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/156.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/157.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Sensational Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/157.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/158.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fashionable Latest Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/158.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/159.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Cotton Blend Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/159.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/160.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/160.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/161.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fancy Retro Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/161.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/162.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Classy Fashionista Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/162.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/163.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Elegant Unique Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/163.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/164.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Polyester Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/164.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/165.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Stylish Latest Men Shorts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/165.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/166.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Classy Elegant Men Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/166.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/167.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Designer Men Kurtas</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/167.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/168.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fashionable Glamarous Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/168.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/169.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Classy Ravishing Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/169.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/170.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Gym vests</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/170.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/171.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Polyester Men Polyester Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/171.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/172.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Ravishing Unique Men Trousers</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/172.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/173.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Comfy Retro Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/173.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/174.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Comfy Designer Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/174.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/175.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Men Polyester Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/175.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/176.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Stylish Partywear Men Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/176.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/177.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">icom Men's Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/177.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/178.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fashionable Latest Men Track Pants</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/178.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/179.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Fabulous Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/179.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/180.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Polyester Men Polyester Regular Tshirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/180.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/181.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Fancy Fashionista Men Shorts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/181.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/182.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Fashionista Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/182.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/183.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">Trendy Fabulous Men Shirts</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/183.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image1/184.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text">MENS STYLISH BEIGE COTTON BLEND OVERSIZED LOOSE FIT TSHIRT FASHIONABLE</div>
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="font1">₹257</div>
+                        <div class="font2 text-decoration-line-through">₹299</div>
+                        <div class="text-success font2">14% off</div>
+                    </div>
+                    <a class="button"
+                        href="https://api.whatsapp.com/send?phone=+918401918533&text=I%20want%20to%20buy%20Rayon%20Slub%20Women%20Kurti%20-%20https://images/184.jpg"
+                        target="_blank"
+                        style="display:inline-block; text-align: center; background-color:#25D366; color:white; text-decoration:none; border-radius:6px;  font-family:sans-serif;">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ✅ Single JS function -->
+    <script>
+        function redirectToProduct(event) {
+            event.preventDefault();
+
+            let query = document.getElementById("searchInput").value.toLowerCase().trim();
+
+            // Product pages mapping
+            const productPages = {
+                "mobile": "mobile.html",
+                "laptop": "laptop.html",
+                "watch": "watch.html",
+                "headphone": "headphone.html",
+                "makeup": "makeup.html",
+                "shoes": "shoes.html",
+                "maherah prise": "prise.html",
+            };
+
+            if (productPages[query]) {
+                window.location.href = productPages[query];
+            } else {
+                window.location.href = "notfound.html";
+            }
+
+            return false;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
