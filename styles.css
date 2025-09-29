@@ -22,6 +22,12 @@ header{
     max-width: 201px;
     min-width: 200px;
     height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 40px;
+}
+.images:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .overflow{
@@ -86,10 +92,6 @@ header{
 .card1{
     height: 90%;
 }
-.title{
-    height: 10%;
-    text-align: center;
-}
 
 
 
@@ -152,9 +154,6 @@ header{
     .hover{
         font-size: 10px;
     }
-    .title{
-        font-size: 10px;
-    }
 }
 @media(min-width:273px){
     .none{
@@ -176,9 +175,6 @@ header{
     .card{
         min-width: 80px;
         height: 100px;
-    }
-    .title{
-        font-size: 8px;
     }
     .hover{
         font-size: 8px;

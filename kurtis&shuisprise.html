@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAHI BAZAR STORE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <style>
+        .card-text {
+            width: 100%;
+            /* chhoti width */
+            white-space: nowrap;
+            /* line break na ho */
+            overflow: hidden;
+            /* overflow chhup jaye */
+            text-overflow: ellipsis;
+            /* last me ... dikhaye */
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+        }
+
+        .card1 {
+            width: 100%;
+            height: 90%;
+        }
+
+        .card-body {
+            width: 100%;
+            height: 10%;
+        }
+
+        .button {
+            border: none;
+            background-color: white;
+            width: 150px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .font1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .font2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media(max-width:600px) {
+            .card {
+                width: 200px;
+                height: 70%;
+            }
+
+            .card1 {
+                width: 100%;
+                height: 30%;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 30%;
+            }
+
+            .card-text {
+                font-size: 15px;
+            }
+
+            .font1 {
+                font-size: 15px;
+            }
+
+            .font2 {
+                font-size: 12px;
+            }
+
+            .button {
+                width: 120px;
+            }
+        }
+
+        @media(max-width:500px) {
+            .card {
+                width: 150px;
+                height: 180px;
+            }
+
+            .card1 {
+                width: 100%;
+                height: 150px;
+            }
+
+            .card-body {
+                width: 100%;
+                height: 100px;
+            }
+
+            .card-text {
+                margin-top: -10px;
+            }
+
+            .button {
+                width: 80px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 12px;
+            }
+
+            .font1 {
+                margin-top: 5px;
+            }
+
+            .font2 {
+                margin-top: 5px;
+            }
+
+            .button {
+                margin-top: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand fw-bold" href="#" style="font-style: italic;">MAHI</a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Search -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <form onsubmit="return redirectToProduct(event)" class="d-flex ms-auto mt-2 mt-lg-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search any product..." aria-label="Search"
+              id="searchInput">
+            <button class="btn btn-outline-primary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ✅ Sample Content -->
+  <section class="mt-5 pt-5 text-center">
+    <div class="font1">Welcome to MAHI BAZAR Store</div>
+    <div class="font2">Search any product from the navbar above 👆</div>
+  </section>
+
+
+
+  <section class="mt-5">
+    <div class="d-flex flex-wrap gap-3 justify-content-around">
+
+        <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/1.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/rayon-slub-women-kurti-with-dupatta-bottomwear/p/96m1p5">1 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/2.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/womans-rayon-kurti-with-palazzo/p/jmhwn">2 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/3.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/womens-lavender-colour-rayon-slub-v-neck-embroidered-straight-kurta-pant-with-dupatta-sat/p/8utxi6">3 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/4.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/womens-ethnic-embroidery-top-pant-and-dupatta-set/p/8m5gul">4 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/5.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurti/p/35pwo2">5 image link</a></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+             <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/6.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/women-kurta/p/2h7h55">6 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/7.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/trendy-voguish-kurtis/p/9k761t">7 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/8.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/bandhani-print-kurta-set-with-3-4-th-sleeve/p/22co3w">8 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/9.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/anarkali-dupatta-set-womens-printed-anarkali-kurti-pant-dupatta-set/p/4krmtc">9 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/10.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/taj-kurti-for-women/p/6hnqz1">10 image link</a></div>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/11.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurtis-for-women-2024-collection/p/77frcm">11 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/12.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/anarakali-kurti-and-dupatta-pink/p/4z49pf">12 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/13.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurti-and-pajma-with-duppatta/p/80od0v">13 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/14.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/women-trending-rayon-printed-short-kurta/p/7a65a6">14 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/15.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/polystercrepe-fabric-aakarsha-graceful-kurtis/p/35ggor">15 image link</a></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+             <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/16.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/cotton-woman-kurta-set-with-pant/p/8w8di1">16 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/17.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/nwomens-fashion-kurti-with-paijama/p/81uo1r">17 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/18.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/rayon-neck-emroidery-3-pc-suit-for-woman-fashion/p/5q8gwr">18 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/19.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/new-desing-kurta-set/p/693ehd">19 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/20.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurti-with-pant-and-dupatta-set/p/8w42ju">20 image link</a></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+             <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/21.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/cotton-printed-short-kurti/p/74ljqs">21 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/22.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/black-formal-wear-chin-work-full-length-kurta-pant-set/p/9ayyjp">22 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/23.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/new-woman-anarkalikurtis-new-trending-anarkali-kurtis/p/82wwom">23 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/25.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/maslin-sequnce-kurta-dupatta-set-with-strechble-pant-dupatta-set/p/3ce7fv">25 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/26.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/short-kurtis/p/55xbae">26 image link</a></div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/27.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/anarkali-high-demand-trendy-rayon-gown-kurtis/p/5jtmad">27 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/28.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/nora-heavy-georjet-dyed-kurti-gown-with-printed-dupatta-set/p/70jnqb">28 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/29.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/womans-cotton-printed-kurta-pant-set/p/77iu8x">29 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/30.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/women-tending-rayon-printed-short-kurta/p/8xb5oe">30 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/31.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/sdb-creation-cotton-hand-block-printed-short-kurti-kurta-shirt-top-for-women/p/7dhjyo">31 image link</a></div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/32.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/nayra-cut-kurti/p/56ibwx">32 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/33.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurtis/p/1blvae">33 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/34.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurta-set/p/9r8kkg">34 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/35.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/v-neack-short-cotton-kurti-for-women/p/7uot64">35 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/36.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/aakarsha-pretty-women-kurta-sets/p/6b6t41">36 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/37.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/pc202purple/p/9tcss1">37 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/38.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/vindyavasini-black-floral/p/71ul4v">38 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/40.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/vindyavasini-black-floral/p/71ul4v">40 NOT AVAILABLE image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/41.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/vindyavasini-black-floral/p/71ul4v">41 NOT AVAILABLE  image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/75.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/vindyavasini-black-floral/p/71ul4v">75 NOT AVAILABLE image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/43.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/straight-embroidered-kurta-for-women-and-girls/p/7tw01f">43 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/44.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/blue-printed-kurti-with-palazzo/p/7xbry6">44 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/42.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/straight-embroidered-kurta-for-women-and-girls/p/7tw01f">42 NOT AVAILABLE image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/45.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/womens-beautiful-rayon-aliya-cut-embroidered-kurti-with-pant-and-dupatta-set/p/655grs">45 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/46.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/selfi-cotton-branded-kurti/p/8udk8q">46 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/47.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/previ-textile-party-wear-women-kurta/p/5lrl52">47 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/48.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurti-with-pant-and-dupatta-set/p/8w42ju">48 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/49.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/women-rayon-printed-shorti-kurti/p/7ma8pa">49 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/50.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/polystercrepe-fabric-hippon-tailor-fancy-designer-low-price-kurta-pant/p/732qkk">50 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/51.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kala-womens-violet-cotton-blend-embroidered-straight-kurta-with-trouser-dupatta/p/7ubsww">51 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/52.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kala-womens-violet-cotton-blend-embroidered-straight-kurta-with-trouser-dupatta/p/7ubsww">52 NOT AVAILABLE image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/53.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/embroidered-kurta-with-dupatta-and-pent-set/p/8uogj1">53 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/54.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/premium-quality-gown-with-lace-dupptawhight-gownredyellow-flower-gownbulbul-gownwomen-and-girl-gowncollage-girl-fancy-gown-party-wear-gown/p/6zu9g5">54 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/55.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurta-pants-plazzo-pair-with-duppta/p/64f0hw">55 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/56.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/elegant-womens-anarkali-kurta-with-pant-and-dupatta-set-ethnic-wear-for-festive-party/p/90c9qw">56 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/57.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/women-straight-printed-kurti/p/64w9bh">57 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/58.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/women-floral-printed-regular-kurta-with-trousers-and-dupatta/p/6iix0w">58 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/59.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/adhya-fab-women-kurta-set/p/9n8zdv">59 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/60.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/womens-rayon-embroidered-kurti-with-pant-and-dupatta-set/p/7q4kuk">60 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/61.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/chikankari-kurti-pant-and-dupatta-set/p/781a5b">61 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/62.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/hkgn-collection-womens-cotton-printed-straight-kurti-cotton-kurtis-for-women-poly-crepe-straight-kurta-womens-printed-crepe-straight-printed-kurti-pink/p/7lh1lq">62 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/63.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/sanatan-floral-embroidered-round-neck-long-sleeves-chikankari-straight-kurti-light/p/9ho844">63 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/64.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/kurtis-for-woman/p/65eqip">64 image link</a></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card1"><img height="100%" width="100%" src="./image/65.avif" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-center"><a class="text-black text-decoration-none" href="https://www.meesho.com/new-attractive-high-demandable-printed-kurti-with-skirt/p/ep9zx">65 image link</a></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ✅ Single JS function -->
+  <script>
+    function redirectToProduct(event) {
+      event.preventDefault();
+
+      let query = document.getElementById("searchInput").value.toLowerCase().trim();
+
+      // Product pages mapping
+      const productPages = {
+        "mobile": "mobile.html",
+        "laptop": "laptop.html",
+        "watch": "watch.html",
+        "headphone": "headphone.html",
+        "makeup": "makeup.html",
+        "shoes": "shoes.html",
+        "kurti": "kurtis&shuis.html",
+        "men": "menfashion.html",
+        "shirt": "menfashion.html",
+        "pent": "menfashion.html",
+        "shuis": "kurtis&shuis.html",
+        "maherah prise": "prise.html",
+      };
+
+      if (productPages[query]) {
+        window.location.href = productPages[query];
+      } else {
+        window.location.href = "notfound.html";
+      }
+
+      return false;
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
